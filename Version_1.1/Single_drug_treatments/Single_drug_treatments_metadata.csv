@@ -1,0 +1,268 @@
+Samples,Drug,Concentration,Treatment time (hrs),Experiment
+T4_BDQ_5x_A_READS,BDQ,3.5,4,BL_data
+T4_BDQ_5x_B_READS,BDQ,3.5,4,BL_data
+T4_BDQ_5x_C_READS,BDQ,3.5,4,BL_data
+T24_BDQ_5x_A_READS,BDQ,3.5,24,BL_data
+T24_BDQ_5x_B_READS,BDQ,3.5,24,BL_data
+T24_BDQ_5x_C_READS,BDQ,3.5,24,BL_data
+T72_BDQ_5x_A_READS,BDQ,3.5,72,BL_data
+T72_BDQ_5x_B_READS,BDQ,3.5,72,BL_data
+T72_BDQ_5x_C_READS,BDQ,3.5,72,BL_data
+T4_BDQ_10x_A_READS,BDQ,7,4,BL_data
+T4_BDQ_10x_B_READS,BDQ,7,4,BL_data
+T4_BDQ_10x_C_READS,BDQ,7,4,BL_data
+T24_BDQ_10x_A_READS,BDQ,7,24,BL_data
+T24_BDQ_10x_B_READS,BDQ,7,24,BL_data
+T24_BDQ_10x_C_READS,BDQ,7,24,BL_data
+T72_BDQ_10x_A_READS,BDQ,7,72,BL_data
+T72_BDQ_10x_B_READS,BDQ,7,72,BL_data
+T72_BDQ_10x_C_READS,BDQ,7,72,BL_data
+T4_CFZ_halfx_A_READS,CFZ,0.6,4,BL_data
+T4_CFZ_halfx_B_READS,CFZ,0.6,4,BL_data
+T4_CFZ_halfx_C_READS,CFZ,0.6,4,BL_data
+T24_CFZ_halfx_A_READS,CFZ,0.6,24,BL_data
+T24_CFZ_halfx_B_READS,CFZ,0.6,24,BL_data
+T24_CFZ_halfx_C_READS,CFZ,0.6,24,BL_data
+T72_CFZ_halfx_A_READS,CFZ,0.6,72,BL_data
+T72_CFZ_halfx_B_READS,CFZ,0.6,72,BL_data
+T72_CFZ_halfx_C_READS,CFZ,0.6,72,BL_data
+T4_CFZ_1x_A_READS,CFZ,3,4,BL_data
+T4_CFZ_1x_B_READS,CFZ,3,4,BL_data
+T4_CFZ_1x_C_READS,CFZ,3,4,BL_data
+T24_CFZ_1x_A_READS,CFZ,3,24,BL_data
+T24_CFZ_1x_B_READS,CFZ,3,24,BL_data
+T24_CFZ_1x_C_READS,CFZ,3,24,BL_data
+T72_CFZ_1x_A_READS,CFZ,3,72,BL_data
+T72_CFZ_1x_B_READS,CFZ,3,72,BL_data
+T72_CFZ_1x_C_READS,CFZ,3,72,BL_data
+T4_INH_2x_A_READS,INH,1.8,4,BL_data
+T4_INH_2x_B_READS,INH,1.8,4,BL_data
+T4_INH_2x_C_READS,INH,1.8,4,BL_data
+T24_INH_2x_A_READS,INH,1.8,24,BL_data
+T24_INH_2x_B_READS,INH,1.8,24,BL_data
+T24_INH_2x_C_READS,INH,1.8,24,BL_data
+T72_INH_2x_A_READS,INH,1.8,72,BL_data
+T72_INH_2x_B_READS,INH,1.8,72,BL_data
+T72_INH_2x_C_READS,INH,1.8,72,BL_data
+T4_INH_10x_A_READS,INH,9,4,BL_data
+T4_INH_10x_B_READS,INH,9,4,BL_data
+T4_INH_10x_C_READS,INH,9,4,BL_data
+T24_INH_10x_A_READS,INH,9,24,BL_data
+T24_INH_10x_B_READS,INH,9,24,BL_data
+T24_INH_10x_C_READS,INH,9,24,BL_data
+T72_INH_10x_A_READS,INH,9,72,BL_data
+T72_INH_10x_B_READS,INH,9,72,BL_data
+T72_INH_10x_C_READS,INH,9,72,BL_data
+T4_LZD_1x_A_READS,LZD,0.7,4,BL_data
+T4_LZD_1x_B_READS,LZD,0.7,4,BL_data
+T4_LZD_1x_C_READS,LZD,0.7,4,BL_data
+T24_LZD_1x_A_READS,LZD,0.7,24,BL_data
+T24_LZD_1x_B_READS,LZD,0.7,24,BL_data
+T24_LZD_1x_C_READS,LZD,0.7,24,BL_data
+T72_LZD_1x_A_READS,LZD,0.7,72,BL_data
+T72_LZD_1x_B_READS,LZD,0.7,72,BL_data
+T72_LZD_1x_C_READS,LZD,0.7,72,BL_data
+T4_LZD_5x_A_READS,LZD,3.7,4,BL_data
+T4_LZD_5x_B_READS,LZD,3.7,4,BL_data
+T4_LZD_5x_C_READS,LZD,3.7,4,BL_data
+T24_LZD_5x_A_READS,LZD,3.7,24,BL_data
+T24_LZD_5x_B_READS,LZD,3.7,24,BL_data
+T24_LZD_5x_C_READS,LZD,3.7,24,BL_data
+T72_LZD_5x_A_READS,LZD,3.7,72,BL_data
+T72_LZD_5x_B_READS,LZD,3.7,72,BL_data
+T72_LZD_5x_C_READS,LZD,3.7,72,BL_data
+T4_MXF_0.4x_A_READS,MXF,1.7,4,BL_data
+T4_MXF_0.4x_B_READS,MXF,1.7,4,BL_data
+T4_MXF_0.4x_C_READS,MXF,1.7,4,BL_data
+T24_MXF_0.4x_A_READS,MXF,1.7,24,BL_data
+T24_MXF_0.4x_B_READS,MXF,1.7,24,BL_data
+T24_MXF_0.4x_C_READS,MXF,1.7,24,BL_data
+T72_MXF_0.4x_A_READS,MXF,1.7,72,BL_data
+T72_MXF_0.4x_B_READS,MXF,1.7,72,BL_data
+T72_MXF_0.4x_C_READS,MXF,1.7,72,BL_data
+T4_MXF_1x_A_READS,MXF,4.2,4,BL_data
+T4_MXF_1x_B_READS,MXF,4.2,4,BL_data
+T4_MXF_1x_C_READS,MXF,4.2,4,BL_data
+T24_MXF_1x_A_READS,MXF,4.2,24,BL_data
+T24_MXF_1x_B_READS,MXF,4.2,24,BL_data
+T24_MXF_1x_C_READS,MXF,4.2,24,BL_data
+T72_MXF_1x_A_READS,MXF,4.2,72,BL_data
+T72_MXF_1x_B_READS,MXF,4.2,72,BL_data
+T72_MXF_1x_C_READS,MXF,4.2,72,BL_data
+T4_PA824_1x_A_READS,PA824,2,4,BL_data
+T4_PA824_1x_B_READS,PA824,2,4,BL_data
+T4_PA824_1x_C_READS,PA824,2,4,BL_data
+T24_PA824_1x_A_READS,PA824,2,24,BL_data
+T24_PA824_1x_B_READS,PA824,2,24,BL_data
+T24_PA824_1x_C_READS,PA824,2,24,BL_data
+T72_PA824_1x_A_READS,PA824,2,72,BL_data
+T72_PA824_1x_B_READS,PA824,2,72,BL_data
+T72_PA824_1x_C_READS,PA824,2,72,BL_data
+T4_PA824_5x_A_READS,PA824,4.6,4,BL_data
+T4_PA824_5x_B_READS,PA824,4.6,4,BL_data
+T4_PA824_5x_C_READS,PA824,4.6,4,BL_data
+T24_PA824_5x_A_READS,PA824,4.6,24,BL_data
+T24_PA824_5x_B_READS,PA824,4.6,24,BL_data
+T24_PA824_5x_C_READS,PA824,4.6,24,BL_data
+T72_PA824_5x_A_READS,PA824,4.6,72,BL_data
+T72_PA824_5x_B_READS,PA824,4.6,72,BL_data
+T72_PA824_5x_C_READS,PA824,4.6,72,BL_data
+T4_POA_10x_A_READS,POA,0,4,BL_data
+T4_POA_10x_B_READS,POA,0,4,BL_data
+T4_POA_10x_C_READS,POA,0,4,BL_data
+T24_POA_10x_A_READS,POA,0,24,BL_data
+T24_POA_10x_B_READS,POA,0,24,BL_data
+T24_POA_10x_C_READS,POA,0,24,BL_data
+T72_POA_10x_A_READS,POA,0,72,BL_data
+T72_POA_10x_B_READS,POA,0,72,BL_data
+T72_POA_10x_C_READS,POA,0,72,BL_data
+T4_RIF_0.4x_A_READS,RIF,0.4,4,BL_data
+T4_RIF_0.4x_B_READS,RIF,0.4,4,BL_data
+T4_RIF_0.4x_C_READS,RIF,0.4,4,BL_data
+T24_RIF_0.4x_A_READS,RIF,0.4,24,BL_data
+T24_RIF_0.4x_B_READS,RIF,0.4,24,BL_data
+T24_RIF_0.4x_C_READS,RIF,0.4,24,BL_data
+T72_RIF_0.4x_A_READS,RIF,0.4,72,BL_data
+T72_RIF_0.4x_B_READS,RIF,0.4,72,BL_data
+T72_RIF_0.4x_C_READS,RIF,0.4,72,BL_data
+T4_RIF_1x_A_READS,RIF,1,4,BL_data
+T4_RIF_1x_B_READS,RIF,1,4,BL_data
+T4_RIF_1x_C_READS,RIF,1,4,BL_data
+T24_RIF_1x_A_READS,RIF,1,24,BL_data
+T24_RIF_1x_B_READS,RIF,1,24,BL_data
+T24_RIF_1x_C_READS,RIF,1,24,BL_data
+T72_RIF_1x_A_READS,RIF,1,72,BL_data
+T72_RIF_1x_B_READS,RIF,1,72,BL_data
+T72_RIF_1x_C_READS,RIF,1,72,BL_data
+DEL_Transcripts_H37Rv_T0_1_A.txt,No drug,0,0,BL_data
+DEL_Transcripts_H37Rv_T0_1_C.txt,No drug,0,0,BL_data
+DEL_Transcripts_H37Rv_T0_1_B.txt,No drug,0,0,BL_data
+OPC_Transcripts_H37Rv_T0_1_A.txt,No drug,0,0,BL_data
+OPC_Transcripts_H37Rv_T0_1_C.txt,No drug,0,0,BL_data
+OPC_Transcripts_H37Rv_T0_1_B.txt,No drug,0,0,BL_data
+TBA_Transcripts_H37Rv_T0_1_A.txt,No drug,0,0,BL_data
+TBA_Transcripts_H37Rv_T0_1_C.txt,No drug,0,0,BL_data
+TBA_Transcripts_H37Rv_T0_1_B.txt,No drug,0,0,BL_data
+T0_A_READS,No drug,0,0,BL_data
+T0_B_READS,No drug,0,0,BL_data
+T0_C_READS,No drug,0,0,BL_data
+T0_A_READS.1,No drug,0,0,BL_data
+T0_B_READS.1,No drug,0,0,BL_data
+T0_C_READS.1,No drug,0,0,BL_data
+T0_A_READS.2,No drug,0,0,BL_data
+T0_B_READS.2,No drug,0,0,BL_data
+T0_C_READS.2,No drug,0,0,BL_data
+T0_A_READS.3,No drug,0,0,BL_data
+T0_B_READS.3,No drug,0,0,BL_data
+T0_C_READS.3,No drug,0,0,BL_data
+T0_A_READS,No drug,0,0,BL_data
+T0_B_READS,No drug,0,0,BL_data
+T0_C_READS,No drug,0,0,BL_data
+T0_A_READS.1,No drug,0,0,BL_data
+T0_B_READS.1,No drug,0,0,BL_data
+T0_C_READS.1,No drug,0,0,BL_data
+T0_A_READS.2,No drug,0,0,BL_data
+T0_B_READS.2,No drug,0,0,BL_data
+T0_C_READS.2,No drug,0,0,BL_data
+T0_A_READS.3,No drug,0,0,BL_data
+T0_B_READS.3,No drug,0,0,BL_data
+T0_C_READS.3,No drug,0,0,BL_data
+DEL_Transcripts_H37Rv_T4_0x_A.txt,No drug,0,4,BL_data
+DEL_Transcripts_H37Rv_T4_0x_B.txt,No drug,0,4,BL_data
+DEL_Transcripts_H37Rv_T4_0x_C.txt,No drug,0,4,BL_data
+OPC_Transcripts_H37Rv_T4_0x_A.txt,No drug,0,4,BL_data
+OPC_Transcripts_H37Rv_T4_0x_B.txt,No drug,0,4,BL_data
+OPC_Transcripts_H37Rv_T4_0x_C.txt,No drug,0,4,BL_data
+TBA_Transcripts_H37Rv_T4_0x_A.txt,No drug,0,4,BL_data
+TBA_Transcripts_H37Rv_T4_0x_B.txt,No drug,0,4,BL_data
+TBA_Transcripts_H37Rv_T4_0x_C.txt,No drug,0,4,BL_data
+T4_0x_A_READS,No drug,0,4,BL_data
+T4_0x_B_READS,No drug,0,4,BL_data
+T4_0x_C_READS,No drug,0,4,BL_data
+T4_CFZ_0x_A_READS,No drug,0,4,BL_data
+T4_CFZ_0x_B_READS,No drug,0,4,BL_data
+T4_CFZ_0x_C_READS,No drug,0,4,BL_data
+T4_LZD_0x_A_READS,No drug,0,4,BL_data
+T4_LZD_0x_B_READS,No drug,0,4,BL_data
+T4_LZD_0x_C_READS,No drug,0,4,BL_data
+T4_A_READS,No drug,0,4,BL_data
+T4_B_READS,No drug,0,4,BL_data
+T4_C_READS,No drug,0,4,BL_data
+T4_0x_A_READS.1,No drug,0,4,BL_data
+T4_0x_B_READS.1,No drug,0,4,BL_data
+T4_0x_C_READS.1,No drug,0,4,BL_data
+T4_0x_A_READS,No drug,0,4,BL_data
+T4_0x_B_READS,No drug,0,4,BL_data
+T4_0x_C_READS,No drug,0,4,BL_data
+T4_CFZ_0x_A_READS,No drug,0,4,BL_data
+T4_CFZ_0x_B_READS,No drug,0,4,BL_data
+T4_CFZ_0x_C_READS,No drug,0,4,BL_data
+T4_LZD_0x_A_READS,No drug,0,4,BL_data
+T4_LZD_0x_B_READS,No drug,0,4,BL_data
+T4_LZD_0x_C_READS,No drug,0,4,BL_data
+DEL_Transcripts_H37Rv_T24_0x_A.txt,No drug,0,24,BL_data
+DEL_Transcripts_H37Rv_T24_0x_B.txt,No drug,0,24,BL_data
+DEL_Transcripts_H37Rv_T24_0x_C.txt,No drug,0,24,BL_data
+OPC_Transcripts_H37Rv_T24_0x_A.txt,No drug,0,24,BL_data
+OPC_Transcripts_H37Rv_T24_0x_B.txt,No drug,0,24,BL_data
+OPC_Transcripts_H37Rv_T24_0x_C.txt,No drug,0,24,BL_data
+TBA_Transcripts_H37Rv_T24_0x_A.txt,No drug,0,24,BL_data
+TBA_Transcripts_H37Rv_T24_0x_B.txt,No drug,0,24,BL_data
+TBA_Transcripts_H37Rv_T24_0x_C.txt,No drug,0,24,BL_data
+T24_0x_A_READS,No drug,0,24,BL_data
+T24_0x_B_READS,No drug,0,24,BL_data
+T24_0x_C_READS,No drug,0,24,BL_data
+T24_CFZ_0x_A_READS,No drug,0,24,BL_data
+T24_CFZ_0x_B_READS,No drug,0,24,BL_data
+T24_CFZ_0x_C_READS,No drug,0,24,BL_data
+T24_LZD_0x_A_READS,No drug,0,24,BL_data
+T24_LZD_0x_B_READS,No drug,0,24,BL_data
+T24_LZD_0x_C_READS,No drug,0,24,BL_data
+T24_A_READS,No drug,0,24,BL_data
+T24_B_READS,No drug,0,24,BL_data
+T24_C_READS,No drug,0,24,BL_data
+T24_0x_A_READS.1,No drug,0,24,BL_data
+T24_0x_B_READS.1,No drug,0,24,BL_data
+T24_0x_C_READS.1,No drug,0,24,BL_data
+T24_0x_A_READS,No drug,0,24,BL_data
+T24_0x_B_READS,No drug,0,24,BL_data
+T24_0x_C_READS,No drug,0,24,BL_data
+T24_CFZ_0x_A_READS,No drug,0,24,BL_data
+T24_CFZ_0x_B_READS,No drug,0,24,BL_data
+T24_CFZ_0x_C_READS,No drug,0,24,BL_data
+T24_LZD_0x_A_READS,No drug,0,24,BL_data
+T24_LZD_0x_B_READS,No drug,0,24,BL_data
+T24_LZD_0x_C_READS,No drug,0,24,BL_data
+DEL_Transcripts_H37Rv_T72_0x_A.txt,No drug,0,72,BL_data
+DEL_Transcripts_H37Rv_T72_0x_B.txt,No drug,0,72,BL_data
+DEL_Transcripts_H37Rv_T72_0x_C.txt,No drug,0,72,BL_data
+OPC_Transcripts_H37Rv_T72_0x_A.txt,No drug,0,72,BL_data
+OPC_Transcripts_H37Rv_T72_0x_B.txt,No drug,0,72,BL_data
+OPC_Transcripts_H37Rv_T72_0x_C.txt,No drug,0,72,BL_data
+TBA_Transcripts_H37Rv_T72_0x_A.txt,No drug,0,72,BL_data
+TBA_Transcripts_H37Rv_T72_0x_B.txt,No drug,0,72,BL_data
+TBA_Transcripts_H37Rv_T72_0x_C.txt,No drug,0,72,BL_data
+T72_0x_A_READS,No drug,0,72,BL_data
+T72_0x_B_READS,No drug,0,72,BL_data
+T72_0x_C_READS,No drug,0,72,BL_data
+T72_CFZ_0x_A_READS,No drug,0,72,BL_data
+T72_CFZ_0x_B_READS,No drug,0,72,BL_data
+T72_CFZ_0x_C_READS,No drug,0,72,BL_data
+T72_A_READS,No drug,0,72,BL_data
+T72_B_READS,No drug,0,72,BL_data
+T72_C_READS,No drug,0,72,BL_data
+T72_0x_A_READS.1,No drug,0,72,BL_data
+T72_0x_B_READS.1,No drug,0,72,BL_data
+T72_0x_C_READS.1,No drug,0,72,BL_data
+T72_LZD_0x_A_READS,No drug,0,72,BL_data
+T72_LZD_0x_B_READS,No drug,0,72,BL_data
+T72_LZD_0x_C_READS,No drug,0,72,BL_data
+T72_0x_A_READS,No drug,0,72,BL_data
+T72_0x_B_READS,No drug,0,72,BL_data
+T72_0x_C_READS,No drug,0,72,BL_data
+T72_CFZ_0x_A_READS,No drug,0,72,BL_data
+T72_CFZ_0x_B_READS,No drug,0,72,BL_data
+T72_CFZ_0x_C_READS,No drug,0,72,BL_data
+T72_A_READS,No drug,0,72,BL_data
+T72_B_READS,No drug,0,72,BL_data
+T72_C_READS,No drug,0,72,BL_data

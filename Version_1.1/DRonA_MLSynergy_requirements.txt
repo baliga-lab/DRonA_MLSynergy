@@ -1,0 +1,6 @@
+pandas
+biopython
+numpy
+sklearn
+holoviews
+bokeh
