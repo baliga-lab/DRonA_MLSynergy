@@ -210,7 +210,7 @@ OPTIONS:\n\
 --gn or -w: <float: 0.0 to 1.0> Gain; default: 0.9\n\
 --to or -x: <float: 0.0 to 1.0> Tolerance; default: 0.9\n\
 --th or -y: <float: 0.0 to 1.0> Threshold; default: 0.85\n\
---[conditional]norm_method or -a: <str> If rank_normalize is True, select from [average,min,max,dense,ordinal]; default: min"
+--[conditional]norm_method or -a: <str> If rank_normalize is True, select from[average,min,max,dense,ordinal]; default: min"
     #### define classical python input
     command,classifier,metadata,data,ref_ids = "","","","",""
     output,clean_data,normalize,norm_method,classify_by,seed_positives,seed_negatives = "Unnamed","False","False","min","Sample_class","Manually IDd viable","Manually IDd non-viable"
@@ -233,7 +233,7 @@ OPTIONS:\n\
         elif opt in ("-f","--classifier"):
             model_name = arg.split("/")[-1]
             classifier = "%s/%s_DRonA_model"%(arg,model_name)
-            ref_ids = "%s/%s_ref_id"%(arg,model_name)
+            ref_ids = "%s/%s_ref_ID"%(arg,model_name)
         elif opt in ("-m","--metadata"):
             metadata = arg
         elif opt in ("-d","--data"):
@@ -273,16 +273,19 @@ OPTIONS:\n\
         exp_data = pd.read_csv(data,index_col=0)
         ### Reindex data
         if command == "Score":
+            print("Re-indexing the gene expression data")
             reInd_exp_data = Data_prep.reindex_data(exp_data,ref_ids)
         else:
             reInd_exp_data = exp_data.copy()
         ### Clean data
         if clean_data == "True":
+            print("Cleaning the gene expression data; Removing samples with missing values")
             cleaned_reInd_exp_data = Data_prep.clean_data(reInd_exp_data,0.70)
         else:## this is default
             cleaned_reInd_exp_data = reInd_exp_data.copy()
         ### Rank normalized
         if normalize == "True":## this is default
+            print("Normalizing the gene expression data with %s method"%norm_method)
             normed_cleaned_reInd_exp_data = Data_prep.rank_normalize_across_genes(cleaned_reInd_exp_data,norm_method)
         else:
             normed_cleaned_reInd_exp_data = cleaned_reInd_exp_data.copy()
@@ -309,9 +312,10 @@ OPTIONS:\n\
         ### If score command
         elif command == "Score":
             if classifier:
-                print(classifier)
+                print("Calculating scores")
                 scores = add_CVS(classifier,normed_cleaned_reInd_exp_data,metadata)
-                scores.to_csv("%s_scored.csv"%metadata.split(".")[0])
+                scores.to_csv("%s_scored.csv"%".".join(metadata.split(".")[:-1]))
+                print("Write the scores to %s file"%"%s_scored.csv"%".".join(metadata.split(".")[:-1]))
             else:
                 print(help_str1+"\n"+"Provide location of trained classifier")
         else:
