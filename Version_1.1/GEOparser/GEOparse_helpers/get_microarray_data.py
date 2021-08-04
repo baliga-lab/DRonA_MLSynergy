@@ -24,7 +24,8 @@ else:
 # functions for downloading microarray gene expression data
 
 def download_ex_genex_array_for_platforms(GSP_FTP, GSP):
-    with closing(urllib3.urlopen("ftp://"+GSP_FTP+'miniml/%s_family.xml.tgz'%GSP)) as r:
+    with closing(urllib3.urlopen("ftp://"+GSP_FTP+'/miniml/%s_family.xml.tgz'%GSP)) as r:
+        print("ftp://"+GSP_FTP+'/miniml/%s_family.xml.tgz'%GSP)
         with open('temp_data/%s.tgz'%GSP, 'wb') as f:
             shutil.copyfileobj(r, f)
     if GSP not in os.listdir("temp_data/"):
@@ -58,7 +59,7 @@ def get_sample_table_values(platform_xml):
             break
     return ret_dict
 
-def create_dict_for_platforms(gpl_id):
+def create_dict_for_platforms(gpl_id,ref_ids):
     gpl_xml = "temp_data/%s/%s_family.xml"%(gpl_id,gpl_id)
     gpl_table = "temp_data/%s/%s-tbl-1.txt"%(gpl_id,gpl_id)
     print(gpl_xml)
@@ -74,9 +75,9 @@ def create_dict_for_platforms(gpl_id):
     ret_dict = pd.DataFrame({},columns = ["Positions"])
     for line in open(gpl_table,"r").readlines():
         split = line.split("\t")
-        gene_id = split[Gene_names].lower()
+        gene_id = split[Gene_names]
         #gene_id = split[Gene_names].lower().split("=")[-1] # Overriding options
-        if gene_id[:2] in ["mt","rv"]:
+        if gene_id in ref_ids:
         #if split[Gene_names].lower()[:2] in ["mt","rv"]:
             if gene_id not in ret_dict.index:
                 ret_dict.at[gene_id,"Positions"]=[split[Id]]
@@ -123,7 +124,7 @@ def match_GPL_to_GSM(GSM,GPL,GPL_dict):
             pass
     return ret_series
    
-def get_expression_arrays(gpl_id,gpl_ftp,gsm_id):
+def get_expression_arrays(gpl_id,gpl_ftp,gsm_id,ref_ids):
     """Requires gpl_id, gpl_ftp and gsm_ids.
     The function will create a csv file in project name and write data to it.
     Provide same project name if the data should be written in one file"""
@@ -134,7 +135,7 @@ def get_expression_arrays(gpl_id,gpl_ftp,gsm_id):
     if "%s-tbl-1.txt"%gpl_id in os.listdir("temp_data/%s/"%gpl_id):
         if "%s.pkl"%gpl_id not in os.listdir("temp_data/Pickles/"):
             print("Preparing platform dictionaries")
-            create_dict_for_platforms(gpl_id)
+            create_dict_for_platforms(gpl_id,ref_ids)
         else:
             pass
     if "%s.pkl"%gpl_id in os.listdir("temp_data/Pickles/"):

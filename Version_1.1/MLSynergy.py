@@ -235,7 +235,7 @@ OPTIONS:\n\
                 mlsyn_score = get_mlsyn_score(classifier,normed_cleaned_reInd_exp_data,metadata,combinations)
                 csvfilename = "%s_predicted.csv"%combinations.split(".")[0]
                 mlsyn_score.to_csv(csvfilename)
-                if chrd == "Yes":
+                if chrd in ["Yes","yes","y","True","true"]:
                     htmlfilename = "%s_chordplot.html"%combinations.split(".")[0]
                     plot_chord(mlsyn_score,htmlfilename)
             else:

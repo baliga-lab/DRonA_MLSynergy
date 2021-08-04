@@ -38,7 +38,7 @@ def get_expression_data(project_name,collection_directory,gene_seq_database, gsm
         Build_metadata [optional] : Boolean, if False will not build metadata table
         Build_expression_data [optional] : Boolean, if False will not build expression table"""
     ##1 Generate IDs to collect
-    ids_to_collect_data = [i.id.capitalize() for i in SeqIO.parse(gene_seq_database,"fasta")]
+    ids_to_collect_data = [i.id for i in SeqIO.parse(gene_seq_database,"fasta")]
     ##2 Create gene expression collection directory
     expression_file = "%s/%s_gene_expression.csv"%(collection_directory,project_name)
     if kwargs["Build_expression_data"] == "Y":
@@ -122,7 +122,7 @@ def get_expression_data(project_name,collection_directory,gene_seq_database, gsm
                                                 gsm_metadata["Pltf_FTP"],\
                                                 gsm_metadata["Sample_ID"]
                     try:
-                        expression_data = get_microarray_data.get_expression_arrays(pltfid,pltf_ftp,sample_id)## output has to be pd.series
+                        expression_data = get_microarray_data.get_expression_arrays(pltfid,pltf_ftp,sample_id,ids_to_collect_data)## output has to be pd.series
                         expression_data_reindexed = expression_data.reindex(index=reindex_index)
                         gene_expression_collected_stagen[gsm_id] = expression_data_reindexed
                         gene_expression_collected_stagen.to_csv(expression_file)
