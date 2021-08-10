@@ -180,7 +180,7 @@ OPTIONS:\n\
         elif opt in ("-f","--classifier"):
             model_name = arg.split("/")[-1]
             classifier = "%s/%s_DRonA_model"%(arg,model_name)
-            ref_ids = "%s/%s_ref_id"%(arg,model_name)
+            ref_ids = "%s/%s_ref_ID"%(arg,model_name)
         elif opt in ("-m","--metadata"):
             metadata = arg
         elif opt in ("-p","--combinations"):
