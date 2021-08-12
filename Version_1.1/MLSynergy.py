@@ -152,7 +152,7 @@ def main(argv):
 --[conditional]data or -d: <str> If command = Score_combinations; datafile of single drug treatment with gene expession data (csv format)\n\
 --[conditional]output or -o: <str> If command = Make_combinations; file to write the combinations as (csv format) in\n\
 OPTIONS:\n\
---plot_chord or -u: <bool> Yes or No for plotting predictions of two drug interaction; default: False\n\
+--plot_chord or -u: <bool> Yes or No for plotting predictions of two drug interaction; default: No\n\
 --comb_number or -n: <comma sperated> If command = Make_combinations; Number of drug to make the combinations with; default = 2,3\n\
 --treatment_durations or -t: <comma sperated> If command = Make_combinations; Treatment duration (in hours) to concider to make the combinations with; default = 72\n\
 --rank_normalize or -z: <bool> True or False for rank normalisation; default: True\n\
