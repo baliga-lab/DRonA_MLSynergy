@@ -6,9 +6,14 @@
 
 import os, re, time
 
-# Define path variable
+# Get path variable
+paths_dict = = {}
+with open("paths.txt") as f:
+    for line in f:
+        (key, val) = line.split("=")
+        paths_dict[key] = val
 
-edirect = "/Users/vivek/edirect/"
+edirect = paths_dict["edirect"]
 
 # create a temproary folder if it doesnt exist
 

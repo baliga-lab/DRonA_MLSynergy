@@ -14,11 +14,16 @@ if "temp_data" not in os.listdir(os.getcwd()):
     temp_path_for_metadata_extraction = os.makedirs("temp_data")
     
 # Define path variable
-edirect = "/Users/vivek/edirect/"
-fastq_dump_path = "/usr/local/Cellar/sratoolkit/2.9.2/bin/"
-aspera_client_path = "/Users/vivek/Applications/Aspera_Connect.app/Contents/Resources/"
-aspera_private_key_path = aspera_client_path+"asperaweb_id_dsa.openssh "
-kallisto_path = ""
+paths_dict = = {}
+with open("paths.txt") as f:
+    for line in f:
+        (key, val) = line.split("=")
+        paths_dict[key] = val
+
+edirect = paths_dict["edirect"]
+aspera_client_path = paths_dict["aspera_connect"]+"/Contents/Resources/"
+aspera_private_key_path = paths_dict["aspera_key"]+"asperaweb_id_dsa.openssh "
+kallisto_path = paths_dict["kallisto"]
 
 # functions to get read info from sra db
 
@@ -60,7 +65,7 @@ def run_aspera(srr_number):
     os.system(command)
 
 def dump_fastq(srr_number):
-    command = fastq_dump_path+"fastq-dump temp_data/%s.sra -O temp_data/%s --split-files"%(srr_number,srr_number)
+    command = "fastq-dump temp_data/%s.sra -O temp_data/%s --split-files"%(srr_number,srr_number)
     print(command)
     os.system(command)
     os.system("rm temp_data/%s.sra"%srr_number)
