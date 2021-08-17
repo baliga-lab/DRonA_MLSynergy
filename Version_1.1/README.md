@@ -28,7 +28,7 @@ pip3 install -r DRonA_MLSynergy_requirements.txt
 - [SRA toolkit](https://ncbi.github.io/sra-tools/)
 - [Aspera connect](https://www.ibm.com/aspera/connect/)
 - [Aspera key path](https://www.ncbi.nlm.nih.gov/sra/docs/aspera-key-pairs/)
-*and update the path names in GEOparse_helpers/paths.txt file*
+...and update the path names in GEOparse_helpers/paths.txt file.
 
 *Get help*
 ```
