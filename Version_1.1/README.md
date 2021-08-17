@@ -1,6 +1,10 @@
 # DRonA and MLSynergy
 **Repository for GEOparser, DRonA and MLSynergy algorithms**
 
+*DRonA: Drug responce analyzer, an algorithm for predicting drug responce in bacteria with transcriptomes from drug treated cultures*
+*MLSynergy: An algorithm for predicting drug synergism and antagonism in bacteria with  transcriptomes from single drug treated cultures*
+*GEOParser: An algorithm for collecting and reanalyzing microarray and RNAseq data from GEO*
+
 ##### Requires Python 2.7 for GEOparser and Python 3.0 for DRonA and MLSynergy
 
 ## Downloading git contents:
@@ -17,9 +21,23 @@ pip3 install -r DRonA_MLSynergy_requirements.txt
 
 ## Running instructions:
 **GEOparser -**
+
+*Before running GEOparser, download
+-[kallisto](https://pachterlab.github.io/kallisto/)
+-[Entrez direct](https://www.ncbi.nlm.nih.gov/books/NBK179288/)
+-[Aspera connect](https://www.ibm.com/aspera/connect/)
+-[Aspera key path](https://www.ncbi.nlm.nih.gov/sra/docs/aspera-key-pairs/)
+and update the path names in GEOparse_helpers/paths.txt file*
+
+*Get help*
 ```
 python2 GEOparser.py --help --prjname <> --coldir <> --refseq <> -gsmidfile <> [OPTIONS]
 ```
+*Running GEOparser*
+```
+python2 GEOparser.py --prjname GEO_data --coldir Training_data --refseq Reference_genomes/MTB_H37Rv_transcripts.fa -gsmidfile Training_data/MTB_GSM_sample_list.txt
+```
+
 **DRonA -**
 
 *Get help*
