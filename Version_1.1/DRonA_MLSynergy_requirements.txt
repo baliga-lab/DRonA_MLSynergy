@@ -1,6 +1,6 @@
 pandas
 biopython
 numpy
-sklearn
+scikit-learn==0.23.2
 holoviews
 bokeh
