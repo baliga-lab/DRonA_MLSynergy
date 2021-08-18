@@ -162,7 +162,7 @@ python3 DRonA.py -h
 python3 MLSynergy.py -c Make_combinations -m Drug_synergy_prediction/SDTs_used_for_predicting_drug_synergy.csv -o Drug_combinations_2020.csv
 ```
 
-#### Predicting drug interactions with the trained DRonA model*
+#### Predicting drug interactions with the trained DRonA model - 
 
 ```
 python3 MLSynergy.py -c Score_combinations -f DRonA_trained_models/MTB_2020 -m Single_drug_treatments/Single_drug_treatments_metadata.csv -d Single_drug_treatments/Single_drug_treatments_data.csv -p Drug_synergy_prediction/Drug_combinations_2020.csv
