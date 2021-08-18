@@ -88,7 +88,9 @@ If the name of the column (__Sample_class__) or labels (__Manually IDd non-viabl
 |  Rv0002   | 1235      |  2453 |...
 | Rv0003 |   2345    | 1111|...|
 | ... | ...      | ...|...|
- or 
+
+ __or__
+ 
 |      Locus_tag   | Drug1_treated_E1           | Drug1_treated_E2|...|
 | ------------- |:-------------|:-------------|:-------------|
 |   Rv0001  | 3178 |1234 |...|
