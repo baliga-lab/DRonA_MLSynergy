@@ -133,7 +133,7 @@ def plot_chord(predictions,filename):
     drugs = list(links["Drug1"].unique())+list(links["Drug2"].unique())
     nodes = hv.Dataset(drugs, 'Drug')
     chord = hv.Chord((links, nodes)).select(value=(1, None))
-    chord.opts(opts.Chord(cmap='Rainbow', edge_cmap='Rainbow',\
+    chord.opts(opts.Chord(cmap='Category20', edge_cmap='Rainbow',\
                           edge_color=dim('Interaction').str(), labels='Drug',\
                           node_color=dim('Drug').str()))
     output_file(filename)

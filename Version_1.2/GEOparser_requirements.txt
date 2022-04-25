@@ -1,0 +1,8 @@
+pandas
+biopython
+numpy
+sklearn
+urlib2
+ftplib
+xml
+paramiko

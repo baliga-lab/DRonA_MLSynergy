@@ -1,4 +1,4 @@
-#!/usr/bin/python3.7
+#!/usr/bin/python2.7
 """@Author: Vivek Srinivas - Baliga Lab, ISB
 - This is program to get gene expression for GEO samples
 - Requires GSM id from GEO dataset

@@ -199,7 +199,7 @@ def main(argv):
 --data or -d: <str> Datafile (csv format) with gene expession data\n\
 OPTIONS:\n\
 --output or -o: If command = Train; Provide name for the trained model; default will be Unnamed\n\
---rank_normalize or -z: <bool> True or False for rank normalisation; default: True\n\
+--rank_normalize or -z: <bool> True or False for rank normalisation; default: False\n\
 --clean_data or -l: <bool> True or False for removing transcritomes with large number of missing data; default: False\n\
 --cb or -q: <str> Label of row in metadata file having data labels for training and testing; default: Sample_class\n\
 --sp or -p: <str> Label for iniital seed data; default: Manually IDd viable\n\
