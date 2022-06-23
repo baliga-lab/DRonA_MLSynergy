@@ -191,21 +191,21 @@ def add_CVS(classifier_loc,data, meta_data_loc):
 
 def main(argv):
     #### help strings
-    help_str1 = "DRonA.py --command <> --classifier[conditional] <> --metadata <> --data <> --ref_ids <> --output <> [OPTIONS]"
+    help_str1 = "DRonA.py --command <> --classifier[conditional] <> --metadata <> --data <> --output <> [OPTIONS]"
     options_str2 = "--help or -h: <str> Lists inputs and their descriptions\n\
 --command or -c: <str> Train or Score\n\
---[conditional]classifier or -f: <str> If command = Score_combinations; location of the trained drona model (folder) \n\
+--[conditional]classifier or -f: <str> If command = Score; location of the trained drona model (folder) \n\
 --metadata or -m: <str> Metadata file (csv format)\n\
 --data or -d: <str> Datafile (csv format) with gene expession data\n\
 OPTIONS:\n\
 --output or -o: If command = Train; Provide name for the trained model; default will be Unnamed\n\
 --rank_normalize or -z: <bool> True or False for rank normalisation; default: False\n\
 --clean_data or -l: <bool> True or False for removing transcritomes with large number of missing data; default: False\n\
---cb or -q: <str> Label of row in metadata file having data labels for training and testing; default: Sample_class\n\
---sp or -p: <str> Label for iniital seed data; default: Manually IDd viable\n\
---sn or -n: <str> Label for test data; default: Manually IDd non-viable\n\
+--cb or -q: <str> Label of row in metadata file having data labels for training and testing; default: 'Sample_class'\n\
+--sp or -p: <str> Label for initial seed data; default: 'Manually IDd viable'\n\
+--sn or -n: <str> Label for test data; default: 'Manually IDd non-viable'\n\
 --k or -k: <str> Kernel [linear,poly,rbf,sigmoid,precomputed]; default: linear\n\
---[conditional]dg or -t: <int: 1 to inf> if kernel is poly; default: 1\n\
+--[conditional]dg or -t: <int: 2 to 10> if kernel is poly; default: 1\n\
 --ga or -g: <str> Gamma [scale,auto]; default: auto\n\
 --gn or -w: <float: 0.0 to 1.0> Gain; default: 0.9\n\
 --to or -x: <float: 0.0 to 1.0> Tolerance; default: 0.9\n\
@@ -310,7 +310,7 @@ OPTIONS:\n\
             os.system("cp %s %s/%s_ref_ID"%(ref_ids,output,output))
             
         ### If score command
-        elif command == "Score":
+        elif command in ["Score","score"]:
             if classifier:
                 print("Calculating scores")
                 scores = add_CVS(classifier,normed_cleaned_reInd_exp_data,metadata)
